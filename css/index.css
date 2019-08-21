@@ -1,4 +1,7 @@
-body, ul, li, p {
+body,
+ul,
+li,
+p {
     margin: 0px;
     padding: 0px;
     list-style: none;
@@ -21,7 +24,8 @@ a {
 
 .logo,
 .navbar {
-    margin: 0 30px;
+    margin: 0 100px;
+    ;
 }
 
 .header {
@@ -46,18 +50,39 @@ a {
     padding: 15px;
 }
 
-.presentation {
+.layout-1 {
     display: flex;
-    align-items: center;
-    margin: 0 30px;
     flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
 }
 
-.presentation div {
-    padding: 0 15px;
+.layout-1-items {
+    max-width: 80%;
+    margin: 0 auto;
     display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+    align-items: center;
+    text-align: center;
 }
 
-.presentation img {
-    height: 550px;
+.layout-1-items div {
+    background: tomato;
+    padding: 5px;
+    width: 300px;
+    height: 150px;
+    margin: 10px auto;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    flex-basis: auto;
+}
+
+
+.title {
+    flex-basis: 100%;
 }
