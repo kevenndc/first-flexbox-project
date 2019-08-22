@@ -68,18 +68,26 @@ a {
     text-align: center;
 }
 
+.layout-1-items img {
+    max-width: 300px;
+}
+
 .layout-1-items div {
-    background: tomato;
+    max-height: 80%;
+    background: #ccc;
+    border-radius: 3px;
+    font-size: 14px;
     padding: 5px;
-    width: 300px;
-    height: 150px;
     margin: 10px auto;
-    line-height: 150px;
-    color: white;
-    font-weight: bold;
-    font-size: 3em;
+    color: black;
     text-align: center;
     flex-basis: auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.23);
+    transition: .5s ease;
+}
+
+.layout-1-items div:hover {
+    background: rgb(0, 0, 0, 0.6);
 }
 
 
