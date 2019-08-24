@@ -10,6 +10,10 @@ p {
     font-family: Arial;
 }
 
+body {
+    background: #36383b;
+}
+
 a {
     text-decoration: none;
 }
@@ -76,7 +80,7 @@ a {
 
 .layout-1-items div {
     max-height: 80%;
-    background: #ccc;
+    background: white;
     border-radius: 3px;
     font-size: 14px;
     padding: 5px;
@@ -89,7 +93,7 @@ a {
 }
 
 .layout-1-items div:hover {
-    background: rgb(0, 0, 0, 0.6);
+    background: #f17060;
 }
 
 
@@ -105,10 +109,6 @@ a {
     font-size: 1.5em;
 }
 
-section {
-    background: #ccc;
-}
-
 .menu {
     display: flex;
     text-align: right;
@@ -122,6 +122,7 @@ section {
     margin: 10px 0;
     text-align: center;
     font-size: 1.75em;
+    color: #f17060;
 }
 
 .menu-fish,
@@ -132,21 +133,24 @@ section {
 }
 
 .menu li {
-    margin: 20px auto;
+    margin: 0 auto;
     overflow: hidden;
     clear: both;
     padding-bottom: 10px;
-    border-bottom: 1px dashed #373532;
+    border-bottom: 1px dashed #ccc;
+    padding: 15px;
 }
 
 .menu p {
     font-size: 0.8em;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ccc;
 }
 
 .menu h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: white;
 }
 
 .menu h3,
@@ -160,13 +164,19 @@ section {
     display: block;
     width: 100px;
     font-size: 1.5em;
+    color: white;
 }
 
 .menu-items div {
     float: right;
     display: block;
     max-width: 300px;
-    height: 130px;
+    min-height: 130px;
+    height: 100%;
+}
+
+.menu-items li:hover {
+    background: #1f2021;
 }
 
 
